@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://kit.fontawesome.com/bf7af3fd49.js" crossorigin="anonymous"></script>
+    <style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Poppins",sans-serif;
+        text-decoration: none;
+    }
+    #welcome-section {
+        height: 100vh;
+    }
+    #Ambivert{
+        font-family:Times New Roman;
+        border: solid 4px;
+        border-radius:10px;
+        border-color: rgb(135, 228, 228);
+        padding:10px;
+        margin-top:15px;
+        margin-left:auto;
+        margin-right:auto;
+        width:30%;
+    }
+    #navbar {
+        background-color: #141414 ;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.75);
+        border-radius: 0px 0px 20px 20px;
+        padding: 10px 0px 0px 0px;
+    }
+    #navbar #nav-pic {
+        display: inline;
+        margin-left: 20px;
+        width: 45px;
+        padding: 8px 0px;
+        margin-left: 12px;
+    }
+    #navbar ul {
+        display: inline;
+        float: right;
+        margin-right: 10px;
+        line-height: 60px;
+        height: 60px;
+    }
+    #navbar ul li {
+        font-size: 20px;
+        line-height: 20px;
+        display: inline;
+        color: white;
+        margin-right: 20px;
+    }
+    #navbar ul li a {
+        padding: 6px 5px;
+        color: white;
+    }
+    #navbar ul li a:hover {
+        background-color:#1f4692;
+        border-radius: 10px;
+        padding-left:5px;
+        padding-right:5px;
+    }
+    #welcome-section {
+        margin-top: 60px;
+        background-color: #1c1d1f;
+        background: linear-gradient(90deg , #2b323f , #312f2f );
+        text-align: center;
+        padding: 20px;
+    }
+    #welcome-section #pro-pic {
+        margin-top: 32vh;
+    }
+  .propic{
+      border-radius:10px;
+  }
+    #welcome-section h1 {
+        margin-top: 20px;
+        color: white;
+        font-size: 30px;
+    }
+    #welcome-section h2 {
+        font-size: 22px;
+        color:#4F86F7;
+    }
+    #projects {
+        text-align: center;
+        background-color: #6c9af5;
+        padding: 25px 15px;
+    }
+    #projects h2 {
+        color: white;
+        margin-top: 10px;
+    }
+    #project-items-all {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
+    #projects .project-item {
+        width: 60%;
+        margin: 20px auto;
+        background-color: #2c2b2b ;
+        border-radius: 5px;
+        color: white;
+    }
+    #projects .project-item:hover {
+        color: #4F86F7;
+        box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.5);
+    }
+    #projects .project-item img {
+        margin-top: 15px;
+        width: 55%;
+        border-radius: 4px;
+    }
+    #projects .project-item h3 {
+        margin-top: 10px;
+        background-color: #464343;
+        padding:15px 10px;
+        border-radius: 0px 0px 5px 5px;
+    }
+    #show-all {
+        background-color: #1c1d1f;
+        color: #4F86F7;
+        padding: 8px 10px;
+        border-radius: 4px;
+        color: white;
+        font-size: 20px;
+    } 
+    #show-all:hover {
+        color: #4F86F7;
+        box-shadow: 2px 2px 20px 5px #1c1d1f20;
+    }
+    #profile {
+        background-color: #1c1d1f;
+        text-align: center;
+        color: white;
+        padding: 20px 15px;
+    }
+    #profile h3 {
+        margin-top: 35px;
+        font-size: 22px;
+    }
+    #profile-items {
+        margin:25px 5px;
+    }
+    #profile-items ul {
+        list-style: none;
+    }
+    #profile-items ul li {
+        margin: 10px auto;
+        transition: transform 0.3s ease-out;
+    }
+    #profile-items ul li a {
+        color: white;
+        font-size: 22px;
+    }
+    #profile-items ul li a i {
+        margin-right: 8px;
+    }
+    #profile-items ul li:hover {
+        transform: translateX(8px);
+    }
+    hr {
+        height: 3px;
+        background-color: #4F86F7;
+        border: unset;
+    }
+    footer {
+        background-color: #1c1d1f;
+        padding: 18px 15px;
+        color: white;
+        text-align: center;
+    }
+    footer a {
+        color: #4F86F7;
+    }
+    
+    @media screen and (min-width:600px) {
+        #project-items-all {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 25px;
+        }
+    }
+    
+    @media screen and (min-width:940px) {
+        #project-items-all {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding: 30px 5%;
+        }
+        #navbar #nav-pic {
+            margin-left: 3%;
+        }
+        #navbar ul {
+            margin-right: 4%;
+        }
+        #navbar ul li {
+            margin-right: 50px;
+        }
+        #projects .project-item:nth-child(4) {
+            grid-column: 2/3;
+        }
+    }
+    #sm:hover{
+        color:cornflowerblue;
+    }
+    #nameofdb{
+        font-family:Optima;
+    }
+    
+    @media screen and (max-width:390px) {
+        #navbar {
+            text-align: center;
+        }
+        #navbar #nav-pic {
+            display: block;
+            text-align: center;
+            margin: 0px auto;
+        }
+        #navbar ul li {
+            font-size: 16px;
+        }
+        #navbar ul  {
+            float: none;
+            margin: 0px auto;
+            text-align: center;
+            margin-right: 0px;
+            padding-right: 0px;
+        }
+        #navbar ul li:nth-child(3) {
+            margin-right: 5px;
+        }
+        #welcome-section h1 {
+            font-size: 24px;
+        }
+        #welcome-section h2 {
+            font-size: 19px;
+            color:#4F86F7;
+        }
+        #marquee:hover{
+            position: absolute;
+            color:rgb(243, 101, 101);
+        }
+      
+    }</style>
+</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh Profile</title>
+    <!-----<link rel="stylesheet" type="text/css" href="dinesh.css"> --->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <nav id="navbar">
+        <img id="nav-pic" src="danish_in_grass.jpg" alt="">
+        <ul>
+            <li><a href="#welcome-section">About me</a></li>
+            <li><a href="#projects">My pics</a></li>
+            <li><a href="#profile">More</a></li>
+        </ul>
+    </nav>
+    <section id="welcome-section">
+        <img  width="200px" height="200px"id="pro-pic" src="poser.jpg" class="propic" alt="Profile picture">
+        <h1 id="nameofdb">Hey, I am Dinesh Balasani</h1>
+        <h2 id ="Ambivert">I'm something of Ambivert myself</h2><br><br><br>
+       <marquee behavior="scroll" direction="left" scrollamount="15"> <a id="marquee"  href="style.html" target="_blank" ><h3  style="color:rgb(228, 51, 51);font-size:25px;font-family: 'Times New Roman', Times, serif;">Click here to see my decent picture</h3></a></marquee>
+    </section>
+    <section id="projects">
+        <h2>Here are my poses</h2>
+        <div id="project-items-all">
+                <a class="project-item" target="_blank">
+                    <img src="biker_danish.jpg">
+                    <h3 class="project-tile">Biker</h3>
+                </a>
+                <a class="project-item" target="_blank">
+                    <img src="car_driver_danish.jpg">
+                    <h3 class="project-tile">Car_Driver</h3>
+                </a>
+                <a class="project-item" target="_blank">
+                    <img src="danish_in_grass.jpg">
+                    <h3 class="project-tile">With_Grass</h3>
+                </a>
+                <a class="project-item" target="_blank" >
+                    <img src="danish_in_specs.jpg">
+                    <h3 class="project-tile">I am with specs</h3>
+                </a>
+        </div>
+        <a target="_blank" id="show-all" > Thats it! </a>
+    </section>
+    <div id="profile">
+        <h3>Follow me on below Platforms... :)</h3>
+        <section id="profile-items">
+            <ul>
+               <li class="profile-item">
+                    <a target="_blank" href="https://www.facebook.com/profile.php?id=100008790181447&sk=photos_of" id="profile-link" >
+                       
+                        <i class="fab fa-facebook" id="sm">  Facebook</i>
+                    </a>
+                </li>
+                <li class="profile-item">
+                    <a target="_blank" href="https://www.linkedin.com/search/results/all/?keywords=dinesh%20balasani&origin=RICH_QUERY_SUGGESTION&position=0&searchId=424dc598-1b08-4fbc-863a-560d7954d5ed&sid=JP%40" >
+                        <i class="fab fa-linkedin"  id="sm">  LinkedIn</i>
+                    </a>
+                </li>
+                <li class="profile-item">
+                    <a target="_blank" href="https://www.instagram.com/dinesh._.dq/" >
+                        <i class="fab fa-instagram"  id="sm">  Instagram</i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <hr>
+    <footer>
+        <p>Designed by <a target="_blank" href="https://github.com/vamshi-vemula"> Vamshi Vemula </a>
+         Developed by <a target="_blank" href="https://about.me/manihas"> Manihas Akula</a></p>
+    </footer>
+</body>
+</html>
